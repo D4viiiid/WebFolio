@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Carl David M. Pamplona</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <!-- Profile Image placed behind the purple gradient -->
+
+            <img src="Assets/pic%20ko.png" alt="Carl David M. Pamplona" class="profile-image-back">
+
+        <!-- Background Outline Text -->
+            <div class="portfolio-outline">MY PORTFOLIO</div>
+
+        <!-- Purple gradient overlay (sits above the image, below the text) -->
+            <div class="gradient-overlay" aria-hidden="true"></div>
+
+            <!-- Main Content -->
+            <div class="hero-content">
+                <div class="content-wrapper">
+                    <!-- Spacer for layout (image placed absolutely behind gradient) -->
+                    <div class="profile-image-container"></div>
+                
+                <!-- Text Content -->
+                <div class="text-content">
+                    <!-- Large background title that sits behind the photo -->
+                    <h1 class="main-title-big">MY PORTFOLIO</h1>
+                    <p class="subtitle">CARL DAVID M. PAMPLONA</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <p>Scroll Down!</p>
+                <div class="arrow-down">
+                    <img src="Assets/scrolldown%20arrow.svg" alt="Scroll down" class="arrow-icon">
+                </div>
+        </div>
+        
+        <!-- Decorative Arrows (replaced inline SVGs with external asset) -->
+        <div class="decorative-arrows">
+            <img src="Assets/Vector%201.svg" alt="Decorative arrow" >
+            <img src="Assets/Vector%201.svg" alt="Decorative arrow" >
+            <img src="Assets/Vector%201.svg" alt="Decorative arrow" >
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="about-container">
+            <div class="about-rail" aria-hidden="true">ABOUTME</div>
+            
+            <div class="about-content">
+                <div class="about-avatar">
+                    <img src="Assets/picko2.jpg" alt="Carl David M. Pamplona">
+                </div>
+
+                <div class="about-text">
+                    <h2 class="about-heading">Hi, I am <strong>CARL DAVID M. PAMPLONA</strong>,<br>an <strong>IT Specialist</strong>, Based in the USA.</h2>
+
+                    <p class="about-paragraph">I am <strong>Carl David M. Pamplona</strong>, an <strong>IT Specialist</strong> specializing in Graphic Design and Programming. A graduate of the Bachelor of Science in Information Technology and a TESDA NC III–certified professional.</p>
+
+                    <p class="about-paragraph">I am driven by a passion for transforming ideas into compelling visuals and functional digital experiences. My goal is to bring designs and websites to life—crafting solutions that are both creative and meaningful.</p>
+
+                    <a href="Assets/CV_PAMPLONA.pdf" download="CV_Carl_David_Pamplona.pdf" class="btn download-cv">Download CV</a>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-num">5+</div>
+                            <div class="stat-label">Years of<br>Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">100+</div>
+                            <div class="stat-label">Projects<br>Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">99.99%</div>
+                            <div class="stat-label">Client<br>Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="portfolio-outline-aboutme">MY PORTFOLIO</div> -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <!-- Floating debris -->
+        <div class="debris debris-1">
+            <img src="Assets/spikes.svg" alt="">
+        </div>
+        <div class="debris debris-2">
+            <img src="Assets/spikes2.svg" alt="">
+        </div>
+        <div class="debris debris-3">
+            <img src="Assets/spikes.svg" alt="">
+        </div>
+
+        <div class = "Options">
+            <h1 class = "h1class1"><a href="myprojects.html#photography" class="project-link">Photography</a></h1>
+            <h1 class = "h1class2"><a href="myprojects.html#merch" class="project-link">Merch Designs</a></h1>
+            <h1 class = "h1class1"><a href="myprojects.html#pubmats" class="project-link">Posters</a></h1>
+            <h1 class = "h1class2"><a href="myprojects.html#activities" class="project-link">My Activities</a></h1>
+        </div>
+        <!-- Add your projects content here -->
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="skill-item">UI/UX DESIGN</div>
+        <div class="skill-item">WEBDESIGN</div>
+        <div class="skill-item">PHOTOGRAPHY</div>
+        <div class="skill-item">GRAPHIC DESIGN</div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="portfolio-outline-testimonials">MY PORTFOLIO</div>
+        
+        <div class="testimonials-header">
+            <h2>Testimonials</h2>
+            <p>What clients say.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Carl brought our ideas to life better than we imagined. From design to development, he delivered with professionalism and speed. Highly recommended for anyone who needs quality IT solutions."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="Assets/no-pfp.svg" alt="Client avatar">
+                    </div>
+                    <div class="author-info">
+                        <div class="author-role">Project Manager</div>
+                        <div class="author-name">Client 1</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-text">"His work ethic is impressive. Carl communicates clearly, meets deadlines, and always makes sure every detail is polished. The website he built for us is visually stunning and performs flawlessly."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="Assets/no-pfp.svg" alt="Client avatar">
+                    </div>
+                    <div class="author-info">
+                        <div class="author-role">Business Owner</div>
+                        <div class="author-name">Client 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="contact-content">
+            <h2 class="contact-quote">"Let's build something<br>that brings your ideas to life."</h2>
+            <button class="btn hire-me-btn" id="hireMeBtn">Hire me</button>
+        </div>
+
+        <!-- Popup Form -->
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup-form">
+                <button class="popup-close" id="closePopup">&times;</button>
+                <h3 class="popup-title">Let's Work Together!</h3>
+                <form id="contactForm" class="contact-form-popup">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required placeholder="Your address">
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Details</label>
+                        <textarea id="details" name="details" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Submit</button>
+                        <button type="button" class="btn-exit" id="exitBtn">Exit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Custom Notification Modal -->
+        <div class="notification-modal" id="notificationModal">
+            <div class="notification-content">
+                <div class="notification-icon" id="notificationIcon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="3"/>
+                        <path d="M30 10v20M30 40v5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="notification-title" id="notificationTitle">Notification</h3>
+                <p class="notification-message" id="notificationMessage">Message goes here</p>
+                <button class="notification-btn" id="notificationBtn">OK</button>
+            </div>
+        </div>
+
+        <hr class="contact-divider">
+
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-logo">CDP</p>
+            </div>
+            
+            <div class="footer-center">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/crl.d4viiiid/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                        <img src="Assets/ig-icon.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61579366487351" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                        <img src="Assets/fb-icon.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61579366487351" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                        <img src="Assets/linkedin-icon.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="copyright">© 2025 David. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

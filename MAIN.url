@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>React HTML Example</title>
+    <style>
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 2rem; }
+        .card { border: 1px solid #ddd; padding: 1rem; border-radius: 6px; max-width: 420px; }
+        button { padding: .5rem .75rem; margin-top: .5rem; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- React + ReactDOM (development) and Babel for JSX in-browser -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- App (JSX) -->
+    <script type="text/babel">
+        const { useState } = React;
+
+        function App() {
+            const [count, setCount] = useState(0);
+            const [text, setText] = useState('');
+
+            return (
+                <div className="card">
+                    <h2>Simple React Example</h2>
+                    <p>This demonstrates HTML + React in a single file.</p>
+
+                    <div>
+                        <label>
+                            Type something:
+                            <input
+                                value={text}
+                                onChange={e => setText(e.target.value)}
+                                placeholder="hello"
+                                style={{ marginLeft: 8 }}
+                            />
+                        </label>
+                    </div>
+
+                    <p>Echo: <strong>{text || '(empty)'}</strong></p>
+
+                    <div>
+                        <p>Counter: {count}</p>
+                        <button onClick={() => setCount(c => c + 1)}>Increment</button>
+                        <button onClick={() => setCount(0)} style={{ marginLeft: 8 }}>Reset</button>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
