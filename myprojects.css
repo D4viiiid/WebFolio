@@ -241,10 +241,17 @@ body {
         padding: 0 20px;
     }
     
+    /* Stack photos vertically on mobile */
     .photo-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap: 12px;
+        gap: 20px;
+        max-height: none;
+    }
+    
+    .photo-item {
+        height: auto;
+        min-height: 300px;
     }
     
     .home-icon {
@@ -274,5 +281,49 @@ body {
     .icon-nav img {
         width: 28px;
         height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-section {
+        padding: 30px 0;
+    }
+    
+    .section-content {
+        padding: 0 15px;
+    }
+    
+    /* Smaller photo items on small phones */
+    .photo-grid {
+        gap: 15px;
+    }
+    
+    .photo-item {
+        min-height: 250px;
+    }
+    
+    .icon-nav ul {
+        padding: 10px 15px;
+        gap: 5px;
+    }
+    
+    .icon-nav a {
+        padding: 6px 10px;
+    }
+    
+    .icon-nav img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .home-icon {
+        top: 15px;
+        left: 15px;
+        padding: 10px;
+    }
+    
+    .home-icon svg {
+        width: 24px;
+        height: 24px;
     }
 }
